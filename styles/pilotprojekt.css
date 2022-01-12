@@ -65,9 +65,9 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  .dobblet_billede {
+  /* .dobblet_billede {
     display: flex;
-  }
+  } */
 
   .section3 figure img {
     padding: 5rem;
@@ -76,7 +76,7 @@
   .image_1_2 img {
     width: 80%;
   }
-  .image_1_2 {
+  /* .image_1_2 {
     display: flex;
-  }
+  } */
 }

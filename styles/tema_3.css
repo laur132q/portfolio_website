@@ -60,9 +60,9 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  .dobblet_billede {
+  /* .dobblet_billede {
     display: flex;
-  }
+  } */
 
   .section3 figure img {
     padding: 5rem;

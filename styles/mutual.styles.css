@@ -98,7 +98,7 @@ figure {
   width: 60px;
   height: 100%;
   background-color: #adafdc;
-  background-image: url(/menu.svg);
+  /* background-image: url(menu.svg); */
   background-size: 40%;
   background-position: center;
   background-repeat: no-repeat;
@@ -109,7 +109,7 @@ figure {
   width: 60px;
   height: 100%;
   background-color: #adafdc;
-  background-image: url(/luk_menuen.svg);
+  /* background-image: url(luk_menuen.svg); */
   background-size: 40%;
   background-position: center;
   background-repeat: no-repeat;
@@ -281,6 +281,11 @@ footer .findos_foot .img_icon2 {
     place-items: left;
     padding-top: 3rem;
     padding-left: 5rem;
+  }
+
+  .dobbelt_billede {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .telt_video {
