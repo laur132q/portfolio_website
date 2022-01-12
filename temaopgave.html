@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles/mutual.styles.css" />
     <link rel="stylesheet" href="https://use.typekit.net/shs2vmr.css" />
     <link rel="stylesheet" href="https://use.typekit.net/shs2vmr.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/tema6/favicon.ico" type="image/x-icon" />
 
     <title>Temaopgave - spil</title>
   </head>
@@ -18,9 +20,9 @@
       <header>
         <nav class="nav_main">
           <ul class="slider_menu">
-            <li><a href="index.html">FORSIDEN</a></li>
-            <li><a href="portfoliodoku.html">PORTFOLIO</a></li>
-            <li><a href="om_mig.html">OM_MIG</a></li>
+            <li><a href="index.html">Forsiden</a></li>
+            <li><a href="portfoliodoku.html">Portfolio</a></li>
+            <li><a href="om_mig.html">Om mig</a></li>
           </ul>
           <div class="burger_menu"></div>
           <div class="burger_menu_luk"></div>
@@ -29,11 +31,11 @@
         <div class="nav_sidebar">
           <ul>
             <li><span>PROJEKTER</span></li>
-            <li><a href="responsivt_site.html">RESPONSIVE_SITE_V2</a></li>
-            <li><a href="tema_3.html">TEMA_3</a></li>
-            <li><a href="temaopgave.html">TEMAOPGAVEN</a></li>
-            <li><a href="pilotprojekt.html">PILOTPROJEKT_VIDEO</a></li>
-            <li><a href="redesign.html">REDESIGN</a></li>
+            <li><a href="responsivt_site.html">Responsivt site v2</a></li>
+            <li><a href="tema_3.html">Tema 3</a></li>
+            <li><a href="temaopgave.html">Temaopgaven - spil</a></li>
+            <li><a href="pilotprojekt.html">Pilotprojekt - video</a></li>
+            <li><a href="redesign.html">Redesign</a></li>
           </ul>
         </div>
       </header>
@@ -41,9 +43,6 @@
 
       <section id="splash_section">
         <img src="/images/Tema4/5.jpg" alt="" />
-        <div class="splash_text_container">
-          <p></p>
-        </div>
       </section>
 
       <section class="section1">
@@ -51,8 +50,8 @@
           <h1>Temaopgaven - Spil</h1>
           <h3>
             I dette tema fik vi til opgave at lave vores eget spil. For at kunne
-            skabe vores eget spil univers, har jeg lært mere om karakterdesign
-            og hvad der gør et spil godt.
+            gøre dette har jeg lært mere om karakterdesign og hvad der gør et
+            spil godt.
           </h3>
           <p>
             Jeg har benyttet mig af kyrds metoden, for at komme på forskellige
@@ -72,19 +71,19 @@
       <section class="section1_2">
         <h2>Bouba og kiki</h2>
         <p>
-          Jeg har fået en bedre forståelse for karakter design, og om hvordan
-          man kan tegne på forskelligevis. Fx igennem solid drawing, som jeg har
-          benyttet mig af. Jeg da jeg gik igang med at skulle finde på min figur
-          til mit spil, ville jeg gerne protræterer en stærk kendis og derfor
-          benyttede jeg mig af mere skarpe former i stedet for bløde og runde.
-          Jeg fandt en del inspiration igennem tegneserien "Den Amerikanske
-          drage", jeg synes meget godt om deres former og ikke mindst farvevalg
-          til miløjet.
+          Jeg har fået en bedre forståelse for karakter design b.la. Bouba og
+          kiki fænomenet, og om hvordan man kan tegne på forskelligevis. Fx
+          igennem solid drawing, som jeg har benyttet mig af. Jeg da jeg gik
+          igang med at skulle finde på min figur til mit spil, ville jeg gerne
+          protræterer en stærk kendis og derfor benyttede jeg mig af mere skarpe
+          former i stedet for bløde og runde. Jeg fandt en del inspiration
+          igennem tegneserien "Den Amerikanske drage", jeg synes meget godt om
+          deres former og ikke mindst farvevalg til miløjet.
           <br />
         </p>
         <div class="image_1_2">
           <div class="dobblet_billede">
-            <img src="/images/Tema4/1.jpg" alt="moodboard" />
+            <img src="/images/Tema4/1.jpg" alt="" />
             <img src="/images/Tema4/3.jpg" alt="" />
           </div>
         </div>
@@ -103,19 +102,6 @@
         <div>
           <img src="/images/Tema4/7.jpg" alt="" />
         </div>
-
-        <!-- *Det her er mit forsøg på at lave en image slider -->
-        <!-- <div class="main-container">
-          <div class="container">
-            <button class="backward">
-              <i class="fa fa-arrow-left" aria-hidden="true"></i>
-            </button>
-            <button onclick="forward()">
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </button>
-          </div>
-        </div> -->
-        <!-- <figure><img src="/images/Tema 2/style_tile.png" alt="" /></figure> -->
       </section>
 
       <section class="section3">
@@ -128,30 +114,30 @@
           spil elementer.
         </p>
         <div class="food_pic">
-          <img src="/images/Tema4/2.jpg" alt="" />
+          <div>
+            <img src="/images/Tema4/2.jpg" alt="" />
+          </div>
+          <div class="animation">
+            <div id="ball" class="ball bouncing"></div>
+          </div>
         </div>
         <p>
           Når man skal kode med animationer er det vigtigt også at have den
           rigtige syntaks. På et enkelt spil element, skal der nemlig skabes to
-          containere. Nemlin en ".container" og en ".sprite". Dette gør man for
+          containere. Nemlig en ".container" og en ".sprite". Dette gør man for
           at bedre kunne skabe, flere animationer, f.eks. en bevægelses
-          animation og en forsvindings animation.
+          animation og en forsvindings animation. For at få disse animationer
+          til at gå igang, på det ønskede tidspunkt, har jeg har brugt min viden
+          indenfor Javasript. Jeg har Brugt nye funktioner såsom,
+          "eventlistener" og "if - sætninger" til at få mit spil til at virke
+          som jeg har planlagt.
         </p>
-        <p>
-          Jeg har udvidet min viden indenfor Javasript rigtig meget. Jeg har
-          fået kendskab til mange nye funktioner såsom, "eventlistner" og "if -
-          sætninger" og lært rigtig meget om at starte en funktion og slukke for
-          andre klasser og animationer.
-        </p>
-        <figure>
-          <!-- <img src="/images/Tema 2/responsive_to_bileder.jpg" alt="" /> -->
-        </figure>
 
         <div class="knap_til_link">
           <a
-            href="https://laurakapper.dk/kea/02_web/04_responsive/responsive_site_v2/"
+            href="https://laurakapper.dk/kea/04_animation/assetliste/spil.html"
           >
-            <p>Se Projektet her</p>
+            <p>Prøv spillet her</p>
           </a>
         </div>
       </section>
@@ -175,14 +161,13 @@
       <div class="findos_foot">
         <h3>Følg mig</h3>
         <a href="https://www.instagram.com/laura_troelsgaard_/"
-          ><img src="images\SVG\instagram_logo.svg" alt="" class="img_icon1"
+          ><img src="images/SVG/instagram_logo.svg" alt="" class="img_icon1"
         /></a>
         <a href="https://www.facebook.com/laura.kapper.1/"
           ><img src="/images/SVG/facebook_logo.svg" alt="" class="img_icon2"
         /></a>
       </div>
     </footer>
+    <script src="/javascript/index.js"></script>
   </body>
-  <script src="/index.js"></script>
-  <script src="/temaopgaven.js"></script>
 </html>

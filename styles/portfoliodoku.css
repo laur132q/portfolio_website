@@ -1,0 +1,21 @@
+.moodbard article {
+  margin-top: 8rem;
+}
+
+.image_slider {
+  padding: 0.6rem;
+}
+
+@media (min-width: 720px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1000px) 1fr;
+  }
+  .moodbard {
+    grid-column: 2 / 3;
+  }
+
+  .the_flex {
+    display: flex;
+  }
+}

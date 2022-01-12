@@ -8,13 +8,19 @@
 }
 .dobblet_billede {
   padding: 1rem;
+  display: flex;
 }
 
-.food_pic {
-  display: flex;
-  width: 50%;
+.dobblet_billede img {
   height: auto;
-  place-content: center;
+  width: 60%;
+}
+
+.food_pic img {
+  width: 50%;
+  margin-left: 8rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .section2 {
@@ -31,38 +37,44 @@
   top: 70px;
   margin-top: 10rem;
 }
-/* .main-container {
+
+.bouncing {
+  animation: bouncing 1.5s alternate infinite ease-in;
+}
+
+@keyframes bouncing {
+  0% {
+    transform: translateY(-150%);
+  }
+
+  100% {
+    transform: translateY(150%);
+  }
+}
+
+#ball {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 25%;
+  height: 25%;
+  background-image: url(/images/SVG/brocoli.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  top: 40%;
+  left: 40%;
 }
 
-.container {
-  width: 450px;
-  height: 300px;
-  background-image: url("/images/Tema4/1.jpg");
-  background-position: center;
-  background-size: cover;
-  transition: 4s;
+.animation {
+  border: 2px solid white;
+  width: 80%;
+  aspect-ratio: 1/1;
+  position: relative;
+  overflow: hidden;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-items: center;
+  /* margin-right: 5rem; */
+  padding: 4rem;
+  left: 10%;
 }
-
-button {
-  margin: 1rem;
-  outline: none;
-  width: 40px;
-  height: 40px;
-  background: #fff;
-  font-size: 1.1rem;
-  border: none;
-  border-radius: 50%;
-  opacity: 0.5;
-  cursor: pointer;
-  transition: 0.2s;
-} */
 
 button:hover {
   opacity: 1;
@@ -91,12 +103,18 @@ button:hover {
   .section1 p {
     max-width: 100%;
   }
-  .first_text_section {
+  /* .first_text_section {
     margin: 1rem;
-  }
+  } */
   .section1 figure {
     width: 100%;
     height: auto;
+  }
+
+  .image1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .section1 h2 {
@@ -120,5 +138,30 @@ button:hover {
 
   .section3 figure img {
     padding: 5rem;
+  }
+  .animation {
+    border: 2px solid white;
+    width: 200%;
+    aspect-ratio: 1/1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-items: center;
+    margin-right: 5rem;
+    left: 5%;
+  }
+  .food_pic {
+    width: 100%;
+    display: flex;
+  }
+
+  .food_pic img {
+    width: 67%;
+    margin-left: 5rem;
+  }
+
+  .dobblet_billede img {
+    height: auto;
+    width: 50%;
   }
 }

@@ -1,0 +1,41 @@
+.om_mig article {
+  margin-top: 8rem;
+}
+
+.min_karrier figure {
+  padding: 1.2rem;
+}
+.min_karrier ul {
+  margin-left: 2rem;
+}
+
+/* .image_slider {
+  padding: 0.6rem;
+} */
+
+.min_karrier ul li {
+  font-family: raleway, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: white;
+}
+@media (min-width: 720px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1000px) 1fr;
+  }
+  .om_mig {
+    grid-column: 2 / 3;
+    display: flex;
+  }
+
+  .om_mig figure img {
+    margin-top: 10.4rem;
+  }
+  .min_karrier {
+    grid-column: 2 / 3;
+    display: flex;
+  }
+}

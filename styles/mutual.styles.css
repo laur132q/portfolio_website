@@ -78,6 +78,7 @@ img {
 figure {
   padding: 1rem;
 }
+
 /* *Navigations kode starter her  */
 
 /* *Her starter navigationen og burger menuen */
@@ -97,7 +98,7 @@ figure {
   width: 60px;
   height: 100%;
   background-color: #adafdc;
-  background-image: url(/images/SVG/SVG/menu.svg);
+  background-image: url(/menu.svg);
   background-size: 40%;
   background-position: center;
   background-repeat: no-repeat;
@@ -108,7 +109,7 @@ figure {
   width: 60px;
   height: 100%;
   background-color: #adafdc;
-  background-image: url(/images/SVG/SVG/luk_menuen.svg);
+  background-image: url(/luk_menuen.svg);
   background-size: 40%;
   background-position: center;
   background-repeat: no-repeat;
@@ -138,6 +139,7 @@ figure {
 
 .nav_main ul li a:hover {
   color: #321240;
+  text-decoration: underline dotted;
 }
 
 /* *burger menuen starter her  */
@@ -151,16 +153,18 @@ figure {
   font-size: 1.3rem;
 }
 .nav_sidebar ul li span {
-  color: rgb(210, 104, 16);
-  text-decoration: none;
+  color: #321240;
+  /* text-decoration: underline; */
   list-style: none;
   font-family: raleway, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.3rem;
+  border-style: dotted;
+  padding: 5px;
 }
 .nav_sidebar ul li a:hover {
-  background-color: #321240;
+  color: #321240;
 }
 
 .hidden {
@@ -169,21 +173,27 @@ figure {
 
 .nav_sidebar ul {
   right: 0;
-  top: 70px;
+  top: 68px;
+  bottom: 1.2%;
   width: 250px;
   padding: 0 5px;
-  background-color: #adafdc;
+  background-color: #adafdcd6;
   z-index: 1000;
   list-style: none;
   text-align: center;
   line-height: 60px;
   position: fixed;
-  border-radius: 4%;
+  border-radius: 0%;
+  /* transition: 0.5s;
+  transform: translateX(20%); */
+  border-style: solid;
+  border-color: #ed7936;
+  outline: 4px dotted #321240;
 }
 
 /* * ------  knap til de forskellige projekter */
 .knap_til_link {
-  background-color: #adafdc;
+  background-color: #ed7936;
   margin: 1rem;
   display: flex;
   flex-direction: column;
@@ -205,14 +215,14 @@ footer {
   margin-top: 5rem;
 }
 
-footer p {
-  color: #321240;
+/* footer p {
+  color: #ed7936;
   margin: 0%;
   padding: 0%;
   font-size: 0.8rem;
   text-transform: uppercase;
   margin-top: 0.3rem;
-}
+} */
 
 .kontakt_foot address a {
   font-family: raleway, sans-serif;
@@ -229,13 +239,17 @@ footer h3 {
   margin: 0%;
   padding: 0%;
   font-size: 1.3rem;
-  color: black;
+  color: #321240;
 }
 
 .kontakt_foot,
 .findos_foot {
   margin-bottom: 2.5rem;
-  padding: 1rem;
+  margin: 2rem;
+  padding: 0.5rem;
+  border-style: solid;
+  border-color: #ed7936;
+  outline: 4px dotted #321240;
 }
 
 .icon_foot {
@@ -290,6 +304,13 @@ footer .findos_foot .img_icon2 {
 
   .findos_foot h3 {
     margin-bottom: 1rem;
+  }
+  footer .findos_foot .img_icon1 {
+    padding: 0;
+  }
+
+  footer .findos_foot .img_icon2 {
+    padding: 0;
   }
 }
 /**----------FOOTER slut---------- */
